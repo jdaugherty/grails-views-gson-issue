@@ -4,8 +4,14 @@ group "app"
 //end::appversiongroup[]
 
 apply from: "${rootProject.projectDir}/gradle/codenarc.gradle"
+apply plugin: "org.grails.plugins.views-json"
 
 dependencies {
+    profile "org.grails.profiles:rest-api"
+
+    compile "org.grails.plugins:views-json"
+    compile "org.grails.plugins:views-json-templates"
+
     //tag::dependency_datastore_rest_client[]
     testCompile "io.micronaut:micronaut-http-client"
     //end::dependency_datastore_rest_client[]

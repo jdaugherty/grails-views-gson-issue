@@ -7,8 +7,8 @@ buildscript {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
         classpath "com.bertramlabs.plugins:asset-pipeline-gradle:$assetPipelineVersion"
         classpath "org.grails.plugins:hibernate5:7.0.0"
+        classpath "org.grails.plugins:views-gradle:1.2.10"
         classpath "gradle.plugin.com.github.erdi.webdriver-binaries:webdriver-binaries-gradle-plugin:2.1"
-
     }
 }
 
@@ -54,6 +54,7 @@ subprojects { project ->
         dependencies {
             compile "org.springframework.boot:spring-boot-starter-logging"
             compile "org.springframework.boot:spring-boot-autoconfigure"
+            compile "org.grails.plugins:views-json"
             compile "org.grails:grails-core"
             console "org.grails:grails-console"
         }

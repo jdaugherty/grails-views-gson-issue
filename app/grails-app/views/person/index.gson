@@ -1,0 +1,9 @@
+import app.PersonCommand
+
+model {
+    PersonCommand personCommand
+}
+
+json {
+    name personCommand.name
+}
